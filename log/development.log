@@ -28273,3 +28273,74 @@ ActionController::RoutingError (No route matches "/pages/js/Copse_400.font.js"):
   
 
 Rendered /home/anton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/pages/home" for 127.0.0.1 at 2011-07-12 14:51:36 +0400
+  Processing by PagesController#home as HTML
+  [1m[36mNews Load (0.2ms)[0m  [1mSELECT "news".* FROM "news" WHERE "news"."id" = 1 LIMIT 1[0m
+Rendered pages/home.html.erb within layouts/application (53.9ms)
+Completed 200 OK in 57ms (Views: 56.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pages/css/reset.css" for 127.0.0.1 at 2011-07-12 14:51:36 +0400
+
+ActionController::RoutingError (No route matches "/pages/css/reset.css"):
+  
+
+Rendered /home/anton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/pages/css/layout.css" for 127.0.0.1 at 2011-07-12 14:51:36 +0400
+
+ActionController::RoutingError (No route matches "/pages/css/layout.css"):
+  
+
+Rendered /home/anton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/pages/js/cufon-replace.js" for 127.0.0.1 at 2011-07-12 14:51:36 +0400
+
+ActionController::RoutingError (No route matches "/pages/js/cufon-replace.js"):
+  
+
+Rendered /home/anton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/pages/js/cufon-yui.js" for 127.0.0.1 at 2011-07-12 14:51:36 +0400
+
+ActionController::RoutingError (No route matches "/pages/js/cufon-yui.js"):
+  
+
+Rendered /home/anton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/pages/css/style.css" for 127.0.0.1 at 2011-07-12 14:51:36 +0400
+
+ActionController::RoutingError (No route matches "/pages/css/style.css"):
+  
+
+Rendered /home/anton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.1ms)
+
+
+Started GET "/pages/js/jquery-1.4.2.js" for 127.0.0.1 at 2011-07-12 14:51:36 +0400
+
+ActionController::RoutingError (No route matches "/pages/js/jquery-1.4.2.js"):
+  
+
+Rendered /home/anton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/pages/js/imagepreloader.js" for 127.0.0.1 at 2011-07-12 14:51:36 +0400
+
+ActionController::RoutingError (No route matches "/pages/js/imagepreloader.js"):
+  
+
+Rendered /home/anton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/pages/js/Copse_400.font.js" for 127.0.0.1 at 2011-07-12 14:51:36 +0400
+
+ActionController::RoutingError (No route matches "/pages/js/Copse_400.font.js"):
+  
+
+Rendered /home/anton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
