@@ -1,4 +1,8 @@
 RssNews::Application.routes.draw do
+  get "rss_reader/new"
+
+  get "posts/new"
+
   get "pages/home"
 
   get "pages/details"

@@ -1,2 +1,14 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+
+
+
+<div class="wrapper2">
+	
+		<% news = News.find(1) %>
+		<p style = "text-align: center; padding: 5px 0 0 0"> <%= news.title %></p>
+		<p style = "padding: 5px 0 0 15px"> <%= news.description %> </p>
+		<p> <h1 ><a href="details"> details </a></h1> <h1_2 ><a href=<%=news.link %>>Ссылка на источник__  <%= news.link %></a></h1_2>  </p>
+		
+						
+	
+	
+</div>

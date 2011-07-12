@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+if [[ -s "/home/anton/.rvm/environments/ruby-1.9.2-p180@rails3tutorial" ]]
+then
+  source "/home/anton/.rvm/environments/ruby-1.9.2-p180@rails3tutorial"
+  exec irb "$@"
+else
+  echo "ERROR: Missing RVM environment file: '/home/anton/.rvm/environments/ruby-1.9.2-p180@rails3tutorial'" >&2
+  exit 1
+fi
+  
