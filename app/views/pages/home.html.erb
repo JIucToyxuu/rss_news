@@ -1,14 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= @title %></title>
+  </head>
+  <body>
+<%  require 'simple-rss' %>
+<% require 'open-uri' %>
+
+<% feed_items = SimpleRSS.parse(open('http://world-pulse.ru/feed')).items %>
+<% newss = {} %>
+<% feed_items.each do |item| -%>
+<% @name = item.title %>
+<% if News.find_by_title(@name) == nil %>
+<% newss[@name] = News.new %>
+<% newss[@name] = News.new %>
+<% newss[@name][:title] = item.title %>
+<% newss[@name][:link] = item.link %>
+<% newss[@name][:description] = item.description %> 
+<% newss[@name].save %>
+
+<% else %>
+<% @tmp = '1' %>
+
+
+<% end %>
+<% end-%>
 
 
 
-<div class="wrapper2">
-	
-		<% news = News.find(1) %>
-		<p style = "text-align: center; padding: 5px 0 0 0"> <%= news.title %></p>
-		<p style = "padding: 5px 0 0 15px"> <%= news.description %> </p>
-		<p> <h1 ><a href="details"> details </a></h1> <h1_2 ><a href=<%=news.link %>>Ссылка на источник__  <%= news.link %></a></h1_2>  </p>
+<% novost = News.find(:all) -%>
+<% novost.each do |item| %>
+	<div class="wrapper2">
+<p style="text-align: center; padding: 5px 0 0 0">	<%= item.title %> </p>
+<p style = " padding: 5px 0 0 15px"> <%= item.description  %> </p>
+ <h1 ><a href="details"> details </a></h1> <h1_2 ><a href=<%=item.link %>>Ссылка на источник__  <%= item.link %></a></h1_2>  
+	</div> 
+ <p> </p>
+<% end -%>
+  </body>
+</html>
+
+
+		
 		
 						
 	
-	
-</div>
+

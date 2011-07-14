@@ -5,7 +5,7 @@ mark, rp, rt, ruby, summary, time {display:inline}
 .left {float:left}
 .right {float:right}
 .wrapper {width:100%;overflow:hidden;text-align:center}
-.wrapper2 {width:90%;height:141px;overflow:hidden; background-color: Green; padding:0px 0px 0px 0px;}
+.wrapper2 {width:90%;overflow:hidden; background-color: #CDB7B5; padding:20px 0px 0px 0px;}
 .center {text-align:center}
 body {width:100%;background:#001527;border:0;font:14px Arial, Helvetica, sans-serif;color:#363636;line-height:20px}
 .inner_copy, .inner_copy a {border:0;float:right;background:#fff;color:#f00;width:50%;line-height:10px;font-size:10px;margin:-220% 0 0 0;overflow:hidden;padding:0}
